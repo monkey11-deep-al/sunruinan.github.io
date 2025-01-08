@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>減肥產品網頁</title>
+    <title>創新減肥產品專案</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,169 +11,131 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-
         header {
-            background-color: #28a745;
+            background-color: #008080;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 50px 20px;
         }
-
-        section {
-            padding: 40px 20px;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
         }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        .cta-btn {
-            background-color: #28a745;
+        nav a {
             color: white;
-            padding: 15px 30px;
+            padding: 14px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .intro-section h2 {
+            color: #008080;
+        }
+        .features, .testimonials {
+            display: flex;
+            justify-content: space-around;
             margin-top: 20px;
         }
-
-        .cta-btn:hover {
-            background-color: #218838;
-        }
-
-        .grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .grid .card {
+        .feature, .testimonial {
             background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            flex: 1 1 30%;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
         }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px;
+        .feature h3, .testimonial h3 {
+            color: #008080;
         }
-
-        .testimonials, .faq {
-            background-color: #e9ecef;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: white;
+        .cta-section {
             text-align: center;
-            padding: 20px;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #008080;
+            color: white;
+        }
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #ff6347;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>輕鬆減重，健康生活</h1>
-        <p>我們的減肥產品幫助您達成健康減重的目標，擁有理想身材！</p>
-        <a href="#more-info" class="cta-btn">了解更多</a>
-        <a href="#purchase" class="cta-btn">立即購買</a>
+        <h1>創新減肥產品專案</h1>
+        <p>讓我們幫助您實現健康的減肥目標</p>
     </header>
 
-    <!-- 問題 (Problems) -->
-    <section id="problems">
-        <h2>減肥的挑戰？我們懂你！</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>無法堅持節食計劃？</h3>
-                <p>我們的產品幫助你控制食慾，輕鬆達成減肥目標。</p>
-            </div>
-            <div class="card">
-                <h3>忙碌的生活方式讓運動時間有限？</h3>
-                <p>只需簡單搭配我們的產品，你就能看到效果，無需大量時間投入運動。</p>
-            </div>
-            <div class="card">
-                <h3>無法看到減肥效果，讓你心灰意冷？</h3>
-                <p>我們的配方經過科學驗證，幫助你有效減重。</p>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <a href="#about">關於我們</a>
+        <a href="#features">產品特色</a>
+        <a href="#testimonials">用戶推薦</a>
+        <a href="#buy">立即購買</a>
+    </nav>
 
-    <!-- 目標 (Goals) -->
-    <section id="goals">
-        <h2>設定減肥目標，實現健康生活</h2>
-        <ul>
-            <li>達成健康的減重目標</li>
-            <li>感受更多的活力與精力</li>
-            <li>改善身體健康，減少慢性疾病風險</li>
-            <li>增強自信，擁有理想身形</li>
-        </ul>
-    </section>
+    <div class="main-content">
 
-    <!-- 解方設計 (Solution Design) -->
-    <section id="solutions">
-        <h2>我們的減肥方案，讓你的目標觸手可及</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>先進的配方，幫助抑制食慾</h3>
-                <p>讓你不再感到飢餓，輕鬆控制飲食。</p>
+        <section class="intro-section" id="about">
+            <h2>關於我們</h2>
+            <p>我們的創新減肥產品專為現代人設計，結合最新的科技與健康理念，幫助您以安全有效的方式達到理想的體重。</p>
+        </section>
+
+        <section class="features" id="features">
+            <div class="feature">
+                <h3>快速見效</h3>
+                <p>我們的產品設計可以幫助您在短短幾週內看到減肥效果，無需極端飲食或劇烈運動。</p>
             </div>
-            <div class="card">
-                <h3>促進新陳代謝，燃燒脂肪</h3>
-                <p>加速脂肪燃燒，讓減肥事半功倍。</p>
+            <div class="feature">
+                <h3>天然成分</h3>
+                <p>我們使用100%天然成分，保證安全，無副作用。</p>
             </div>
-            <div class="card">
-                <h3>天然成分，健康減重</h3>
-                <p>採用天然草本成分，無副作用，安全有效。</p>
+            <div class="feature">
+                <h3>專業支持</h3>
+                <p>購買後，我們的專業顧問團隊會為您提供個性化的減肥計劃和建議。</p>
             </div>
-        </div>
-        <a href="#purchase" class="cta-btn">立即購買</a>
-    </section>
+        </section>
 
-    <!-- 用戶見證 (Testimonials) -->
-    <section class="testimonials">
-        <h2>來自滿意用戶的聲音</h2>
-        <blockquote>
-            "這款產品讓我輕鬆減掉了10公斤，我感覺更有活力！" — 張小姐
-        </blockquote>
-        <blockquote>
-            "我再也不用擔心食慾過大，終於找到適合我的減肥方法！" — 李先生
-        </blockquote>
-    </section>
+        <section class="testimonials" id="testimonials">
+            <div class="testimonial">
+                <h3>張小姐</h3>
+                <p>"這款產品幫我減了10公斤，完全沒有任何副作用，真的很推薦！"</p>
+            </div>
+            <div class="testimonial">
+                <h3>李先生</h3>
+                <p>"我以前試過很多減肥方法，這款產品效果最好，現在感覺更有活力了！"</p>
+            </div>
+            <div class="testimonial">
+                <h3>王女士</h3>
+                <p>"在使用這款產品的幾個月內，我的體重穩步下降，體脂也明顯減少，非常滿意！"</p>
+            </div>
+        </section>
 
-    <!-- 購買區 (Purchase Section) -->
-    <section id="purchase">
-        <h2>立即開始你的減肥旅程</h2>
-        <p>選擇你的減肥方案，立即購買！</p>
-        <a href="#" class="cta-btn">單瓶購買</a>
-        <a href="#" class="cta-btn">三瓶優惠</a>
-        <a href="#" class="cta-btn">六瓶優惠</a>
-    </section>
+        <section class="cta-section" id="buy">
+            <h2>開始您的減肥之旅</h2>
+            <p>現在就購買我們的創新減肥產品，達成您的減肥目標！</p>
+            <button class="cta-button">立即購買</button>
+        </section>
 
-    <!-- 常見問題 (FAQ) -->
-    <section class="faq">
-        <h2>常見問題</h2>
-        <h3>這款產品是否安全？</h3>
-        <p>我們的產品經過專業測試，成分天然且無副作用。</p>
-        <h3>需要配合運動嗎？</h3>
-        <p>儘管運動有助於加速減重，但本產品設計為單獨使用即可見效。</p>
-        <h3>多久會見效？</h3>
-        <p>大多數使用者在2-3週內開始看到顯著效果。</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>關於我們 | 聯繫我們</p>
-        <p>© 2025 減肥產品公司 | 所有權利保留</p>
-        <div>
-            <a href="#" style="color: white;">Facebook</a> |
-            <a href="#" style="color: white;">Instagram</a> |
-            <a href="#" style="color: white;">Twitter</a>
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>
